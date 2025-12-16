@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <script>
+            //sınıfı tanımla
+            class Ucgen{
+                //statik değişkenler sınıf dısında kullanılmaz ama sınıf icerisinde kullanılabilir
+                static genislik=0;
+                static yukseklik=0;
+                static alan(){
+                    return Ucgen.genislik * Ucgen.yukseklik / 2;
+                }
+            }
+            //nesne olustur
+            Ucgen.genislik = 10;
+            Ucgen.yukseklik = 5;
+            document.write("Birinci Uçgen Alan: " + Ucgen.alan());
+
+            document.write("<br>");
+
+            //nesne olustur
+            Ucgen.genislik = 7;
+            Ucgen.yukseklik = 9;
+            document.write("Ikinci Uçgen Alan: " + Ucgen.alan());
+        </script>
+    </body>
+</html>

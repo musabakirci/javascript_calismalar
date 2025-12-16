@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Test Page</title>
+    </head>
+    <body>
+        <h1 id ="My First Heading"></h1>
+         <script>
+            //Tek satırlık yorum
+            /* Çok satırlı yorum
+            Bu yorum birden fazla satır içerebilir.
+            */
+
+            //alert("Merhaba");//Mesaj kutusu çalıştırır.
+            
+            //değişken oluşturma
+            var a;
+            a = 5; //değişkene değer atama
+            var b = 10; //değişken tanımlama ve değer atama
+            var c =3, d; //c'ye 3, d'ye ise tanımlama yapıldı ama değer ataması yapılmadı.
+            d = 4; //d'ye değer atama
+
+            //Değeri hiçbir zaman değişmeyecek olan sabit değişkenler için const kullanılır.
+            const e = 5; //sabit değişken tanımlama ve değer atama
+
+            //Bir değişkeni sadece kullandığınız yerde tanımlamak için let kullanılır.
+            let f = 6; //let ile değişken tanımlama ve değer atama
+
+            x = 1; //global değişken tanımlama (bu iyi bir uygulama değil)
+            y = 2; //global değişken tanımlama (bu da iyi bir uygulama değil)
+            //Global değişkenler, tüm kodda erişilebilir.
+            toplam = x + y; //Global değişkenlerin kullanımı
+            //alert("Toplam: " + toplam); //Toplamı gösteren mesaj kutusu
+
+            var ad = "Ali Miran"; //String değişken tanımlama ve değer atama
+
+            //document.write("İlk sayfa"); //Sayfaya yazı yazdırma
+            
+            //document.write("<br>"); //Yeni satır ekleme
+
+            //console.log("Bu bir konsol mesajidir."); //Konsola mesaj yazdırma
+
+            document.getElementById("My First Heading").innerHTML = ad; //HTML içeriğini değiştirme
+
+            //Bu dosya "harici.js" olarak adlandırılmıştır.
+         </script>  
+        <script src="harici.js"></script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <script>
+            //String sınıfı özellikleri ve metotları
+            var str = "Merhaba, JavaScript!";
+            document.write("Orijinal String: " + str + "<br>");
+
+            //length - String uzunluğu
+            document.write("String uzunluğu: " + str.length + "<br>");
+
+            //toUpperCase() - Büyük harfe çevirme
+            document.write("Büyük harfe çevirilmiş: " + str.toUpperCase() + "<br>");
+
+            //toLowerCase() - Küçük harfe çevirme
+            document.write("Küçük harfe çevirilmiş: " + str.toLowerCase() + "<br>");
+
+            //charAt() - Belirli bir indeksteki karakteri alma
+            document.write("İndeks 7'deki karakter: " + str.charAt(7) + "<br>");
+
+            //indexOf() - Belirli bir karakterin indeksi
+            document.write("İndeks 7'deki karakterin indeksi: " + str.indexOf("a") + "<br>");
+
+            //lastIndexOf() - Belirli bir karakterin son indeksi
+            document.write("Son 'a' karakterinin indeksi: " + str.lastIndexOf("a") + "<br>");
+
+            //substring() - Belirli bir aralıktaki alt stringi alma
+            document.write("İndeks 0'dan 5'e kadar olan alt string: " + str.substring(0, 5) + "<br>");
+
+            //slice() - Belirli bir aralıktaki alt stringi alma (substring ile benzer)
+            document.write("İndeks 7'den sonrasini alma: " + str.slice(7) + "<br>");
+
+            //split() - Stringi belirli bir karaktere göre bölme
+            var words = str.split(", ");
+            document.write("Virgülle bölünmüş kelimeler: " + words.join(" | ") + "<br>");
+
+            //replace() - Belirli bir karakteri başka bir karakterle değiştirme
+            document.write("İlk 'a' karakterini 'e' ile değiştirme: " + str.replace("a", "e") + "<br>");
+
+            //trim() - Başındaki ve sonundaki boşlukları kaldırma
+            var strWithSpaces = "   Merhaba, JavaScript!   ";
+            document.write("Boşluklari kaldirilmis: '" + strWithSpaces.trim() + "'<br>");
+
+            //startsWith() - Stringin belirli bir karakterle başlayıp başlamadığını kontrol etme
+            document.write("String 'Merhaba' ile başliyor mu? " + str.startsWith("Merhaba") + "<br>");
+
+            //endsWith() - Stringin belirli bir karakterle bitip bitmediğini kontrol etme
+            document.write("String 'JavaScript!' ile bitiyor mu? " + str.endsWith("JavaScript!") + "<br>");
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            
+            var a =7, b = 5; //Küresel değişkenler, tüm kodda erişilebilir.
+            function topla(){
+                
+                var toplam = 0; //Yerel değişkenler sadece fonksiyon icinde kullanılır. Başka bir fonksiyon icinde kullanılmaz.
+                toplam = a + b;
+                alert("Toplam: " + topla);
+            }
+            topla();
+
+            function carp(){
+                
+                var carpim = 0; //Yerel değişkenler sadece fonksiyon icinde kullanılır. Başka bir fonksiyon icinde kullanılmaz.
+                carpim = a * b;
+                alert("Carpim: " + carpim);
+            }
+            carp();
+        </script>
+    </body>
+</html>

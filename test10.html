@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            //degiskenleri tanimla
+            var genislik, yukseklik, alan, cevre;
+
+            //kullanıcıdan genislik değerini al
+            genislik = Number(prompt("Lütfen dikdörtgenin genişliğini girin:"));
+
+            //kullanıcıdan yukseklik değerini al
+            yukseklik = Number(prompt("Lütfen dikdörtgenin yüksekliğini girin:"));
+
+            //alanı hesapla
+            alan = genislik * yukseklik;
+
+            //cevreyi hesapla
+            cevre = 2 * (genislik + yukseklik);
+
+            //sonucu ekrana yazdır
+            alert("Dikdörtgenin alani: " + alan + "\nDikdörtgenin çevresi: " + cevre);
+            
+        </script>
+    </body>
+</html>

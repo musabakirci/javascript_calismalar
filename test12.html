@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        var vize = Number(prompt("Lütfen vize notunuzu girin:"));
+        var final = Number(prompt("Lütfen final notunuzu girin:"));
+        var ortalama = (vize * 0.4) + (final * 0.6);
+
+        if (ortalama >= 60) {
+            document.write("Tebrikler, dersi geçtiniz! Notunuz: " + ortalama);
+            document.write("<br>");
+            document.write("Sitemize hoş geldiniz!");
+        } else {
+            document.write("Üzgünüz, dersi geçemediniz. Notunuz: " + ortalama);
+            document.write("<br>");
+            document.write("Sitemize hoş geldiniz!");
+        }
+       
+
+    </script>
+</body>
+</html>

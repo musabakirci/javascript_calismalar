@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <script>
+            // getTime metodu, Date nesnesinin zaman bilgisini milisaniye cinsinden verir.
+            var tarih = new Date("2023-10-01T12:00:00Z"); // UTC zaman diliminde bir tarih oluşturuyoruz.
+            var zamanMilisaniye = tarih.getTime(); // Tarihin milisaniye cinsinden değerini alıyoruz.
+            document.write("Zaman (milisaniye cinsinden): " + zamanMilisaniye + "<br>");
+
+            // getDate metodu, Date nesnesinin tarih bilgisini alır.
+            var gun = tarih.getDate(); // Tarihin gününü alıyoruz.
+            document.write("Gün: " + gun + "<br>"); 
+
+            // getDay metodu, haftanın gününü alır (0: Pazar, 1: Pazartesi, ..., 6: Cumartesi).
+            var haftaGunu = tarih.getDay(); // Haftanın gününü alıyoruz.
+            var gunler = ["Pazar", "Pazartesi", "Sali", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
+            document.write("Haftanin Günü: " + gunler[haftaGunu] + "<br>"); // Haftanın gününü yazdırıyoruz.
+
+            // getFullYear metodu, Date nesnesinin yıl bilgisini alır.
+            var yil = tarih.getFullYear(); // Tarihin yılını alıyoruz.
+            document.write("Yil: " + yil + "<br>"); // Yılı yazdırıyoruz.
+
+            // getMonth metodu, Date nesnesinin ay bilgisini alır (0: Ocak, 1: Şubat, ..., 11: Aralık).
+            var ay = tarih.getMonth(); // Tarihin ayını alıyoruz.   
+            var aylar = ["Ocak", "Şubat", "Mart", "Nisan", "Mayis", "Haziran", "Temmuz", "Ağustos", "Eylul", "Ekim", "Kasim", "Aralik"];
+            document.write("Ay: " + aylar[ay] + "<br>"); // Ayı yazdırıyoruz.
+            
+            // getHours metodu, Date nesnesinin saat bilgisini alır.
+            var saat = tarih.getHours(); // Tarihin saatini alıyoruz.
+            document.write("Saat: " + saat + "<br>"); // Saati yazdırıyoruz.
+
+            // getMinutes metodu, Date nesnesinin dakika bilgisini alır.
+            var dakika = tarih.getMinutes(); // Tarihin dakikasını alıyoruz.
+            document.write("Dakika: " + dakika + "<br>"); // Dakikayı yazdırıyoruz.
+            
+            // getSeconds metodu, Date nesnesinin saniye bilgisini alır.
+            var saniye = tarih.getSeconds(); // Tarihin saniyesini alıyoruz.
+            document.write("Saniye: " + saniye + "<br>"); // Saniyeyi yazdırıyoruz.
+
+            // getMilliseconds metodu, Date nesnesinin milisaniye bilgisini alır.
+            var milisaniye = tarih.getMilliseconds(); // Tarihin milisaniyesini alıyoruz.
+            document.write("Milisaniye: " + milisaniye + "<br>"); // Milisaniyeyi yazdırıyoruz.
+
+            // getTimezoneOffset metodu, UTC ile yerel saat arasındaki farkı dakika cinsinden alır.
+            var zamanFarki = tarih.getTimezoneOffset(); // UTC ile yerel saat arasındaki farkı alıyoruz.
+            document.write("UTC ile Yerel Saat Arasindaki Fark (dakika cinsinden): " + zamanFarki + "<br>"); // Farkı yazdırıyoruz.
+
+            // getUTCDate metodu, UTC zaman dilimindeki gün bilgisini alır.
+            var utcGun = tarih.getUTCDate(); // UTC zaman dilimindeki gün bilgisini alıyoruz.
+            document.write("UTC Gün: " + utcGun + "<br>"); // UTC gununu yazdırıyoruz.
+
+            // setTime metodu, Date nesnesinin zaman bilgisini milisaniye cinsinden ayarlar.
+            tarih.setTime(zamanMilisaniye + 3600000); // Zamanı 1 saat ileri alıyoruz (3600000 milisaniye).
+            document.write("Yeni Zaman (milisaniye cinsinden): " + tarih.getTime() + "<br>"); // Yeni zamanı yazdırıyoruz.
+
+            // setDate metodu, Date nesnesinin gün bilgisini ayarlar.
+            tarih.setDate(gun + 1); // Gün bilgisini bir gün ileri alıyoruz.
+            document.write("Yeni Gün: " + tarih.getDate() + "<br>"); // Yeni günü yazdırıyoruz.
+
+            // setFullYear metodu, Date nesnesinin yıl bilgisini ayarlar.
+            tarih.setFullYear(yil + 1); // Yıl bilgisini bir yıl ileri alıyoruz.
+            document.write("Yeni Yil: " + tarih.getFullYear() + "<br>"); // Yeni yılı yazdırıyoruz.
+
+            // setMonth metodu, Date nesnesinin ay bilgisini ayarlar.
+            tarih.setMonth(ay + 1); // Ay bilgisini bir ay ileri alıyoruz.
+            document.write("Yeni Ay: " + aylar[tarih.getMonth()] + "<br>"); // Yeni ayı yazdırıyoruz.
+
+            // setHours metodu, Date nesnesinin saat bilgisini ayarlar.
+            tarih.setHours(saat + 1); // Saat bilgisini bir saat ileri alıyoruz.
+            document.write("Yeni Saat: " + tarih.getHours() + "<br>"); // Yeni saati yazdırıyoruz.
+
+            // setMinutes metodu, Date nesnesinin dakika bilgisini ayarlar.
+            tarih.setMinutes(dakika + 1); // Dakika bilgisini bir dakika ileri alıyoruz.
+            document.write("Yeni Dakika: " + tarih.getMinutes() + "<br>"); // Yeni dakikayı yazdırıyoruz.
+
+            // setSeconds metodu, Date nesnesinin saniye bilgisini ayarlar.
+            tarih.setSeconds(saniye + 1); // Saniye bilgisini bir saniye ileri alıyoruz.
+            document.write("Yeni Saniye: " + tarih.getSeconds() + "<br>"); // Yeni saniyeyi yazdırıyoruz.
+
+            // setMilliseconds metodu, Date nesnesinin milisaniye bilgisini ayarlar.
+            tarih.setMilliseconds(milisaniye + 100); // Milisaniye bilgisini 100 milisaniye ileri alıyoruz.
+            document.write("Yeni Milisaniye: " + tarih.getMilliseconds() + "<br>"); // Yeni milisaniyeyi yazdırıyoruz.
+
+
+
+        </script>
+    </body>
+</html>

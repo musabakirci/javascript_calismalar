@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <script>
+            //sınıf oluştur
+            class Daire{
+                constructor(yaricap){
+                    this.yaricap = yaricap
+                }
+                alan(){
+                    return Math.PI * this.yaricap * this.yaricap;
+                }
+                cevre(){
+                    return 2 * Math.PI * this.yaricap;
+                }
+            }
+
+            //nesne oluştur
+            var r1 = Number(prompt("Lütfen birinci dairenin yaricapini girin:"));
+            var Daire1 = new Daire(r1);
+            document.write("alan = " + Daire1.alan() + " cevre =" + Daire1.cevre());
+            document.write("<br>");
+
+            //nesne oluştur
+             var r2 = Number(prompt("Lütfen ikinci dairenin yaricapini girin:"));
+            var Daire2 = new Daire(r2);
+            document.write("alan = " + Daire2.alan() + " cevre =" + Daire2.cevre());
+            
+            
+        </script>
+    </body>
+</html>

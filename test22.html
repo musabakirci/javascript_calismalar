@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <h1 id="1'den 10'a kadar olan sayilarin do-while döngüsü ile toplami"></h1>
+
+        <script>
+            var k = 1; // Başlangıç değeri
+            var toplam = 0; // Toplam değişkeni
+            do {
+                document.write("Döngü içindeki sayaç: " + k + "<br>"); // Çıktı
+                toplam += k; // Toplama ekle
+                document.write("Döngü içindeki toplam: " + toplam + "<br>"); // Çıktı
+                k++; // Artış
+            } while(k <= 10); // Koşul
+
+            document.write("1'den 10'a kadar olan sayilarin toplami: " + toplam);
+        </script>
+    </body>
+</html>
